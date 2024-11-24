@@ -62,19 +62,44 @@
         .hero-section {
             background: linear-gradient(145deg, #1a1a1a 0%, #2d2d2d 100%);
             color: white;
-            padding: 4rem 0;
+            padding: 6rem 0 4rem 0;
             position: relative;
             overflow: hidden;
         }
-        .hero-section::after {
+        .hero-section::before {
             content: '';
             position: absolute;
-            bottom: 0;
+            top: 0;
             left: 0;
-            width: 100%;
+            right: 0;
             height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-            animation: borderGlow 2s infinite ease-in-out;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+        }
+        .hero-section h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #ffffff, #a8a8a8);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInDown 0.8s ease-out;
+        }
+        .hero-section .lead {
+            font-size: 1.4rem;
+            color: #cccccc;
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease-out;
+            animation-delay: 0.2s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+        .social-buttons {
+            animation: fadeInUp 0.8s ease-out;
+            animation-delay: 0.4s;
+            opacity: 0;
+            animation-fill-mode: forwards;
         }
         .btn-custom, .nav-link {
             font-size: 1.2rem;
@@ -214,6 +239,16 @@
         @keyframes borderGlow {
             0%, 100% { opacity: 0.3; }
             50% { opacity: 0.7; }
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
