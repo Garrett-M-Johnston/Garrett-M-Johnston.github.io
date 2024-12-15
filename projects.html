@@ -164,7 +164,7 @@
             position: relative;
             padding-bottom: 1rem;
             margin-bottom: 3rem;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.438);
             letter-spacing: 2px;
         }
         .section-title::after {
@@ -211,11 +211,25 @@
             width: 100%;
         }
         .card-text {
-            color: #ddd;
+            color: #ffffff;
             line-height: 1.8;
-            position: relative;
-            padding-left: 20px;
             margin-bottom: 1.5rem;
+        }
+        .card-text ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .card-text li {
+            position: relative;
+            padding-left: 1.5em;
+            margin-bottom: 1em;
+            color: #ffffff;
+        }
+        .card-text li:before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #ffffff;
         }
         .card-text br {
             display: none;
@@ -249,6 +263,42 @@
                 opacity: 1;
                 transform: translateY(0);
             }
+        }
+        .card-body .card-text,
+        .card-body .card-text ul,
+        .card-body .card-text li {
+            color: #ffffff !important;
+        }
+        
+        .project-card .card-body .card-text * {
+            color: #ffffff !important;
+        }
+
+        .card-text li:before {
+            color: #ffffff !important;
+        }
+
+        .project-card .card-body .card-text,
+        .project-card .card-body .card-text ul li,
+        .project-card .card-body .card-text ul li::before {
+            color: #ffffff !important;
+            text-shadow: none !important;
+        }
+        
+        .project-card .card-body .card-text * {
+            color: #ffffff !important;
+        }
+        
+        .card-body ul li {
+            color: #ffffff !important;
+        }
+
+        .card-text li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #ffffff !important;
+            opacity: 1 !important;
         }
     </style>
 </head>
@@ -301,9 +351,11 @@
                         <div class="card-body">
                             <h5 class="card-title">SOAR-EDR Integration Platform</h5>
                             <p class="card-text">
-                                • Integrated SOAR (Tines) and EDR (LimaCharlie) to automate security workflows, minimizing manual efforts in threat detection and response.<br><br>
-                                • Developed real-time threat detection in a simulated environment for quicker identification and handling of security threats.<br><br>
-                                • Configured advanced cybersecurity tools to ensure smooth operation and improve efficiency in security processes.
+                                <ul>
+                                    <li>Integrated SOAR (Tines) and EDR (LimaCharlie) to automate security workflows, minimizing manual efforts in threat detection and response.</li>
+                                    <li>Developed real-time threat detection in a simulated environment for quicker identification and handling of security threats.</li>
+                                    <li>Configured advanced cybersecurity tools to ensure smooth operation and improve efficiency in security processes.</li>
+                                </ul>
                             </p>
                             <a href="https://youtu.be/5cyR0erpmbQ?si=EcYZBSU85ptcgLI-" class="nav-link" target="_blank" rel="noopener noreferrer">View Project</a>
                         </div>
@@ -315,10 +367,12 @@
                         <div class="card-body">
                             <h5 class="card-title">Python Network Security Analyzer Suite</h5>
                             <p class="card-text">
-                                • Developed a multi-feature network security tool using Scapy and Npcap<br><br>
-                                • Designed a Wireshark-like interface with protocol information, IPs, packet size, and timestamps.<br><br>
-                                • Implemented live traffic monitoring, traffic simulation mode, and basic filtering options.<br><br>
-                                • Allows advanced analysis through packet capture, file encryption, phishing detection, and password validation.
+                                <ul>
+                                    <li>Developed a multi-feature network security tool using Scapy and Npcap</li>
+                                    <li>Designed a Wireshark-like interface with protocol information, IPs, packet size, and timestamps.</li>
+                                    <li>Implemented live traffic monitoring, traffic simulation mode, and basic filtering options.</li>
+                                    <li>Allows advanced analysis through packet capture, file encryption, phishing detection, and password validation.</li>
+                                </ul>
                             </p>
                             <a href="https://github.com/Garrett-M-Johnston/Python-Network-Security-Analyzer-Suite-" class="nav-link" target="_blank" rel="noopener noreferrer">View Project</a>
                         </div>
@@ -330,10 +384,12 @@
                         <div class="card-body">
                             <h5 class="card-title">Shade's Summit</h5>
                             <p class="card-text">
-                                • Directed a team of six developers using Agile methodologies to create a polished video game.<br><br>
-                                • Facilitated collaboration through clear communication, technical leadership, and iterative problem-solving.<br><br>
-                                • Utilized tools such as GitHub for version control and Microsoft Loop for task management.<br><br>
-                                • Showcased the completed game via an interactive booth at a public event.
+                                <ul>
+                                    <li>Directed a team of six developers using Agile methodologies to create a polished video game.</li>
+                                    <li>Facilitated collaboration through clear communication, technical leadership, and iterative problem-solving.</li>
+                                    <li>Utilized tools such as GitHub for version control and Microsoft Loop for task management.</li>
+                                    <li>Showcased the completed game via an interactive booth at a public event.</li>
+                                </ul>
                             </p>
                             <a href="https://sites.google.com/view/shades-summit/home/play-our-game?authuser=0" class="nav-link" target="_blank" rel="noopener noreferrer">View Project</a>
                         </div>
@@ -345,11 +401,29 @@
                         <div class="card-body">
                             <h5 class="card-title">Virtual Home Lab</h5>
                             <p class="card-text">
-                                • Built a multi-VM cloud security environment in AWS using Windows Server, Kali Linux, and Ubuntu.<br><br>
-                                • Set up comprehensive security monitoring using Splunk Enterprise to collect and analyze Windows security logs.<br><br>
-                                • Configured vulnerability scanning capabilities using Tenable Nessus for continuous security assessment.
+                                <ul>
+                                    <li>Built a multi-VM cloud security environment in AWS using Windows Server, Kali Linux, and Ubuntu.</li>
+                                    <li>Set up comprehensive security monitoring using Splunk Enterprise to collect and analyze Windows security logs.</li>
+                                    <li>Configured vulnerability scanning capabilities using Tenable Nessus for continuous security assessment.</li>
+                                </ul>
                             </p>
                             <a href="https://youtu.be/C7WT9r0pfZc" class="nav-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Raspberry Pi Project (Current Project)</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Successfully assembled and configured a Raspberry Pi system using Vilros hardware components, demonstrating proficiency in single-board computer hardware integration and setup.</li>
+                                    <li>Installed and optimized Kali Linux operating system on the Raspberry Pi platform, showcasing strong Linux system administration skills and command-line interface expertise.</li>
+                                    <li>Created a portable penetration testing environment by leveraging Kali Linux's security and network analysis tools, displaying practical understanding of cybersecurity fundamentals.</li>
+                                </ul>
+                            </p>
+                            <a href="https://github.com/Garrett-M-Johnston/Python-Network-Security-Analyzer-Suite-" class="nav-link"
+                                target="_blank" rel="noopener noreferrer">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -359,10 +433,11 @@
                         <div class="card-body">
                             <h5 class="card-title">AES Encryption Project (In Progress)</h5>
                             <p class="card-text">
-                                A Python-based text encryption tool that securely encrypts and decrypts messages using AES encryption. 
-                                The system generates random encryption keys protected by user passwords, 
-                                implementing industry-standard cryptographic practices including PBKDF2 key derivation and salting for enhanced security. 
-                                Features a simple command-line interface for encrypting messages and managing encrypted keys.
+                                <ul>
+                                    <li>A Python-based text encryption tool that securely encrypts and decrypts messages using AES encryption.</li>
+                                    <li>The system generates random encryption keys protected by user passwords, implementing industry-standard cryptographic practices including PBKDF2 key derivation and salting for enhanced security.</li>
+                                    <li>Features a simple command-line interface for encrypting messages and managing encrypted keys.</li>
+                                </ul>
                             </p>
                             <a href="https://github.com/Garrett-M-Johnston/AES-Encryption-Project" class="nav-link" target="_blank" rel="noopener noreferrer">View Project</a>
                         </div>
