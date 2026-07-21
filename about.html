@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Garrett Johnston</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            min-height: 100vh;
+        }
+
+        .hero-section {
+            background: linear-gradient(145deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 5rem 0 3rem 0;
+            position: relative;
+        }
+
+        .hero-section h1 {
+            font-size: 3.8rem;
+            font-weight: 700;
+            background: linear-gradient(to right, #ffffff, #a8a8a8);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .profile-photo {
+            width: 100%;
+            max-width: 280px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            border: 3px solid rgba(255,255,255,0.15);
+        }
+
+        .card-panel {
+            background: linear-gradient(145deg, #2a2a2a 0%, #333333 100%);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.08);
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 0.8rem;
+            margin-bottom: 1.8rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #fff, transparent);
+        }
+
+        .skill-badge {
+            background: linear-gradient(145deg, #3a3a3a 0%, #444444 100%);
+            padding: 0.5rem 1rem;
+            margin: 0.25rem;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 0.88rem;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .experience-item {
+            border-left: 2px solid rgba(255,255,255,0.2);
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ffffff;
+        }
+
+        .ref-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .navbar-nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            font-size: 1.1rem;
+            padding: 0.6rem 1.8rem !important;
+            border: 1px solid #444;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            color: #ffffff !important;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            background-color: #333;
+            border-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1>About Garrett Johnston</h1>
+            <p class="lead">Background, Technical Expertise, Work History, and Professional References</p>
+            <div class="social-buttons mt-3">
+                <a href="https://github.com/Garrett-M-Johnston" class="btn btn-outline-light m-2" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://linkedin.com/in/garrett-m-johnston" class="btn btn-outline-light m-2" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:johnstong25@students.ecu.edu" class="btn btn-outline-light m-2">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                
+                <!-- Left Sidebar Column -->
+                <div class="col-lg-4">
+                    <!-- Profile Card -->
+                    <div class="card-panel text-center">
+                        <img src="Linkedin Profile Picture.jpg" alt="Garrett Johnston" class="profile-photo mb-3">
+                        <h3 class="h4 mb-1">Garrett Johnston</h3>
+                        <p class="text-secondary small mb-3">Greenville, NC</p>
+                        <p class="text-light small">IT Helpdesk Technician at ECU & Cybersecurity Graduate Student</p>
+                        <hr class="border-secondary">
+                        <div class="text-start small text-light">
+                            <p class="mb-2"><i class="fas fa-envelope me-2 text-secondary"></i>johnstong25@students.ecu.edu</p>
+                            <p class="mb-2"><i class="fab fa-linkedin me-2 text-secondary"></i>garrett-m-johnston</p>
+                            <p class="mb-0"><i class="fab fa-github me-2 text-secondary"></i>Garrett-M-Johnston</p>
+                        </div>
+                    </div>
+
+                    <!-- Professional References Card -->
+                    <div class="card-panel">
+                        <h3 class="section-title"><i class="fas fa-user-check me-2"></i>References</h3>
+                        
+                        <div class="ref-card">
+                            <h5 class="h6 mb-1 text-white">Ryan Boyd</h5>
+                            <p class="text-secondary small mb-1">Technology Support Analyst</p>
+                            <p class="text-secondary micro mb-1">ECU AFH IT Enterprise Info Systems</p>
+                            <p class="small mb-0"><i class="fas fa-envelope me-2 text-secondary"></i>boydry24@ecu.edu</p>
+                        </div>
+
+                        <div class="ref-card">
+                            <h5 class="h6 mb-1 text-white">Brian Stanford</h5>
+                            <p class="text-secondary small mb-1">Assistive Technology Specialist</p>
+                            <p class="text-secondary micro mb-1">ECU AFH IT Enterprise Info Systems</p>
+                            <p class="small mb-0"><i class="fas fa-envelope me-2 text-secondary"></i>stanfordb17@ecu.edu</p>
+                        </div>
+
+                        <div class="ref-card mb-0">
+                            <h5 class="h6 mb-1 text-white">Daniel Laymon</h5>
+                            <p class="text-secondary small mb-1">Client Support Manager</p>
+                            <p class="text-secondary micro mb-1">ECU AFH IT Enterprise Info Systems</p>
+                            <p class="small mb-0"><i class="fas fa-envelope me-2 text-secondary"></i>laymond15@ecu.edu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Main Column -->
+                <div class="col-lg-8">
+                    
+                    <!-- Biography Card -->
+                    <div class="card-panel">
+                        <h3 class="section-title"><i class="fas fa-user me-2"></i>Professional Summary</h3>
+                        <p class="lead text-light">
+                            Dedicated IT professional and Cybersecurity graduate student with active Security+ and CySA+ certifications. Proven ability to support campus users, manage system migrations, and perform root cause analysis. Looking to advance into larger infrastructure and security focused roles.
+                        </p>
+                    </div>
+
+                    <!-- Education Card -->
+                    <div class="card-panel">
+                        <h3 class="section-title"><i class="fas fa-graduation-cap me-2"></i>Education</h3>
+                        <div class="mb-4">
+                            <h4 class="h5 text-white mb-1">Master of Science in Information and Cybersecurity Technology</h4>
+                            <p class="text-secondary small mb-0">East Carolina University | Expected December 2027</p>
+                        </div>
+                        <div>
+                            <h4 class="h5 text-white mb-1">Bachelor of Science in Industrial Technology</h4>
+                            <p class="text-secondary small mb-0">East Carolina University | Concentration in Information and Cybersecurity Technology | December 2026</p>
+                        </div>
+                    </div>
+
+                    <!-- Work Experience Card -->
+                    <div class="card-panel">
+                        <h3 class="section-title"><i class="fas fa-briefcase me-2"></i>Work Experience</h3>
+                        
+                        <div class="experience-item">
+                            <h4 class="h5 text-white mb-1">IT Helpdesk Technician</h4>
+                            <p class="text-secondary small mb-2">East Carolina University – Greenville, NC | May 2025 – Present</p>
+                            <ul class="text-light small ps-3">
+                                <li class="mb-1">Helped set up and maintain workstations, including troubleshooting and reimaging.</li>
+                                <li class="mb-1">Provided support for different applications and fixed day to day tech issues for users.</li>
+                                <li class="mb-1">Worked with different departments to handle a variety of tech needs while keeping sensitive info secure.</li>
+                                <li class="mb-1">Managed administrative duties using isolated MFA secured privileged accounts under strict security protocols.</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-item">
+                            <h4 class="h5 text-white mb-1">Security Staff</h4>
+                            <p class="text-secondary small mb-0">Staff 1 – Cary, NC | March 2025 – September 2025</p>
+                        </div>
+
+                        <div class="experience-item mb-0">
+                            <h4 class="h5 text-white mb-1">Volunteer</h4>
+                            <p class="text-secondary small mb-0">Best Friend Adoption – Raleigh, NC | April 2020 – Present</p>
+                        </div>
+                    </div>
+
+                    <!-- Technical Skills & Certifications Matrix -->
+                    <div class="card-panel mb-0">
+                        <h3 class="section-title"><i class="fas fa-cogs me-2"></i>Technical Skills & Certifications</h3>
+                        
+                        <div class="mb-3">
+                            <h5 class="h6 text-secondary uppercase">Certifications</h5>
+                            <span class="skill-badge">CompTIA CySA+</span>
+                            <span class="skill-badge">CompTIA Security+</span>
+                            <span class="skill-badge">SOAR EDR Integration Platform</span>
+                            <span class="skill-badge">Certiport IT Specialist Python</span>
+                            <span class="skill-badge">CCNA Fundamentals</span>
+                        </div>
+
+                        <div class="mb-3">
+                            <h5 class="h6 text-secondary uppercase">Operating Systems</h5>
+                            <span class="skill-badge">Windows 10</span>
+                            <span class="skill-badge">Windows 11</span>
+                            <span class="skill-badge">Kali Linux</span>
+                            <span class="skill-badge">Ubuntu</span>
+                        </div>
+
+                        <div class="mb-3">
+                            <h5 class="h6 text-secondary uppercase">Technical Support</h5>
+                            <span class="skill-badge">Workstation Setup</span>
+                            <span class="skill-badge">Hardware Troubleshooting</span>
+                            <span class="skill-badge">System Imaging</span>
+                            <span class="skill-badge">Printer Configuration</span>
+                        </div>
+
+                        <div class="mb-3">
+                            <h5 class="h6 text-secondary uppercase">Software & Administration</h5>
+                            <span class="skill-badge">Microsoft Intune</span>
+                            <span class="skill-badge">Elastic Cloud</span>
+                            <span class="skill-badge">Team Dynamix</span>
+                            <span class="skill-badge">Wireshark</span>
+                            <span class="skill-badge">VMWare</span>
+                        </div>
+
+                        <div>
+                            <h5 class="h6 text-secondary uppercase">Programming & CLI</h5>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">PowerShell</span>
+                            <span class="skill-badge">Command Line Interface</span>
+                            <span class="skill-badge">C# Unity</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
